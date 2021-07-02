@@ -4,6 +4,6 @@ const authorize = require('../middlewares/authorize');
 
 router.route('/')
     .post(authorize, setProfile)
-    .get(authorize, getProfile)
+    .get(authorize, getProfile);
 
 module.exports = router;

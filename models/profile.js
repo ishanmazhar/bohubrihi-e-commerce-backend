@@ -5,13 +5,13 @@ module.exports.Profile = model('Profile', Schema({
         type: Schema.Types.ObjectId,
         unique: true,
         required: true,
-        ref: "User",
+        ref: "User"
     },
     phone: String,
     address1: String,
     address2: String,
     city: String,
     state: String,
-    postcode: String,
-    country: String, 
+    postcode: Number,
+    country: String,
 }))
